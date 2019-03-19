@@ -10,10 +10,10 @@ namespace ClinicNetCore.Models
         public int VisitId { get; set; }
         public string Specialist { get; set; } 
         public string Complaints { get; set; } 
-        public string Diagnosis { get; set; } 
-
+        public string Diagnosis { get; set; }
+        public DateTime ColDate { get; set; }
         public int PatientId { get; set; } 
-        public Patient Patient { get; set; }
+
 
     }
 }

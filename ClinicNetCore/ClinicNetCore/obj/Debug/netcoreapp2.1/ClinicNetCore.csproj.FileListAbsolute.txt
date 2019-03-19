@@ -60,3 +60,4 @@ C:\Users\d.dosymbek\Google Диск\Обучение\repos\ClinicGit\ClinicNetCo
 C:\Users\d.dosymbek\Google Диск\Обучение\repos\ClinicGit\ClinicNetCore\ClinicNetCore\obj\Debug\netcoreapp2.1\ClinicNetCore.dll
 C:\Users\d.dosymbek\Google Диск\Обучение\repos\ClinicGit\ClinicNetCore\ClinicNetCore\obj\Debug\netcoreapp2.1\ClinicNetCore.pdb
 C:\Users\d.dosymbek\Google Диск\Обучение\repos\ClinicGit\ClinicNetCore\ClinicNetCore\obj\Debug\netcoreapp2.1\ClinicNetCore.csproj.CopyComplete
+C:\Users\d.dosymbek\Google Диск\Обучение\repos\ClinicGit\ClinicNetCore\ClinicNetCore\obj\Debug\netcoreapp2.1\Razor\Views\Home\FillPatient.g.cshtml.cs

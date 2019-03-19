@@ -11,5 +11,6 @@ namespace ClinicNetCore.Models
         public string FName { get; set; }
         public string Address { get; set; }
         public long Phone { get; set; }
+        public Visit Visit { get; set; }
     }
 }
