@@ -1,0 +1,34 @@
+﻿@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>History</title>
+</head>
+<body>
+    <div>
+        <h3>Hisotyr filling form</h3>
+        <p>For filling a history please fill:</p>
+        <form method="post">
+            <input type="hidden" value="@ViewBag.PatientId" name="PatientId" />
+            <table>
+                <tr>
+                    <td>Specialist:</td>
+                    <td><input type="text" name="Specialist" /> </td>
+                </tr>
+                <tr>
+                    <td>Complaints:</td>
+                    <td><input type="text" name="Complaints" /></td>
+                </tr>
+                <tr>
+                    <td>Diagnosis:</td>
+                    <td><input type="text" name="Diagnosis" /></td>
+                </tr>
+                <tr><td><input type="submit" value="Fill" /> </td><td></td></tr>
+            </table>
+        </form>
+    </div>
+</body>
+</html>

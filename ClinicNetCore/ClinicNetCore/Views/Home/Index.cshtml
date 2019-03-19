@@ -1,0 +1,32 @@
+﻿@model IEnumerable<ClinicNetCore.Models.Patient>
+@{
+    //ViewData["Title"] = "List of patients";
+    Layout = null;
+}
+<!DOCTYPE html>
+
+<html>
+<head>
+    <title>Patients</title>
+</head>
+<body>
+    <h3>As follows</h3>
+    <table>
+        <tr>
+            <td>Name</td>
+            <td>Address</td>
+            <td>Phone</td>
+            <td></td>
+        </tr>
+        @foreach (var patient in Model)
+        {
+            <tr>
+                <td>@patient.FName</td>
+                <td>@patient.Address</td>
+                <td>@patient.Phone</td>
+                <td><a href="~/Home/FillVisit/@patient.Id">Fill</a></td>
+            </tr>
+        }
+    </table>
+</body>
+</html>
