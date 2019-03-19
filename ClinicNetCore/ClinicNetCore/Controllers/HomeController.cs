@@ -2,6 +2,7 @@
 using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using ClinicNetCore.Models;
+using System.Data.SqlClient;
 
 namespace ClinicNetCore.Controllers
 {
@@ -43,8 +44,28 @@ namespace ClinicNetCore.Controllers
         {
             db.Visits.Add(visit);
             visit.ColDate = DateTime.Now;
-            ViewBag.Date = visit.ColDate;
+            ViewBag.ColDate = visit.ColDate;
             db.SaveChanges();
+            return View();
+        }
+
+        [HttpGet]
+        public void GetAllPatients()
+        {
+               var patients = db.Patients.ToList();
+               
+        }
+
+        [HttpGet]
+        public IActionResult PatientsById(int id)
+        {
+            return View(db.Patients.Find(id));
+        }
+
+
+        [HttpPost]
+        public IActionResult SearchPatient(Visit visit)
+        {
             return View();
         }
     }
