@@ -11801,11 +11801,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\d.dosymbek\\Google Диск\\Обучение\\repos\\ClinicNetCore\\ClinicNetCore\\ClinicNetCore.csproj",
+      "projectUniqueName": "C:\\Users\\d.dosymbek\\Google Диск\\Обучение\\repos\\ClinicGit\\ClinicNetCore\\ClinicNetCore\\ClinicNetCore.csproj",
       "projectName": "ClinicNetCore",
-      "projectPath": "C:\\Users\\d.dosymbek\\Google Диск\\Обучение\\repos\\ClinicNetCore\\ClinicNetCore\\ClinicNetCore.csproj",
+      "projectPath": "C:\\Users\\d.dosymbek\\Google Диск\\Обучение\\repos\\ClinicGit\\ClinicNetCore\\ClinicNetCore\\ClinicNetCore.csproj",
       "packagesPath": "C:\\Users\\d.dosymbek\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\d.dosymbek\\Google Диск\\Обучение\\repos\\ClinicNetCore\\ClinicNetCore\\obj\\",
+      "outputPath": "C:\\Users\\d.dosymbek\\Google Диск\\Обучение\\repos\\ClinicGit\\ClinicNetCore\\ClinicNetCore\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
