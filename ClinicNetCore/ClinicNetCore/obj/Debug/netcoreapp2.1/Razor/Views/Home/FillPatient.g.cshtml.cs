@@ -63,7 +63,7 @@ using ClinicNetCore.Models;
             WriteLiteral("<h2>Patient Form</h2>\r\n\r\n");
             EndContext();
             BeginContext(80, 974, false);
-            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "6d988a0a262e433bbd60d52e1aa63ccd", async() => {
+            __tagHelperExecutionContext = __tagHelperScopeManager.Begin("form", global::Microsoft.AspNetCore.Razor.TagHelpers.TagMode.StartTagAndEndTag, "863f95795fcc4cc69e7ae099632be222", async() => {
                 BeginContext(136, 911, true);
                 WriteLiteral(@"
     <p>Please patient's details</p>

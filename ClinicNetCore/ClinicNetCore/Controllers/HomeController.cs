@@ -3,6 +3,8 @@ using System.Linq;
 using Microsoft.AspNetCore.Mvc;
 using ClinicNetCore.Models;
 using System.Data.SqlClient;
+using System.Threading.Tasks;
+using Microsoft.EntityFrameworkCore;
 
 namespace ClinicNetCore.Controllers
 {
@@ -68,5 +70,60 @@ namespace ClinicNetCore.Controllers
         {
             return View();
         }
+
+        [HttpGet]
+        public IActionResult UpdatePatient(int id)
+        {
+            if (id == null)
+            {
+                return NotFound();
+            }
+            ViewBag.PatientId = id;
+            var patient = db.Patients.FindAsync(id);
+            if (patient == null)
+            {
+                return NotFound();
+            }
+            return View();
+        }
+
+
+
+
+        [HttpPost]
+        [ValidateAntiForgeryToken]
+        public async Task<IActionResult> UpdatePatient(int id, [Bind("Id,FName,Address,Phone")] Patient patient)
+        {
+            if (id != patient.Id)
+            {
+                return NotFound();
+            }
+
+            if (ModelState.IsValid)
+            {
+                try
+                {
+                    db.Update(patient);
+                    await db.SaveChangesAsync();
+                }
+                catch (DbUpdateConcurrencyException)
+                {
+                    if (patient == null)
+                    {
+                        return NotFound();
+                    }
+                    else
+                    {
+                        throw;
+                    }
+                }
+                return RedirectToAction(nameof(Index));
+            }
+            return View();
+        }
+
+
+
+
     }
 }

@@ -12,12 +12,14 @@
     </tr>
     @foreach (var patient in Model)
     {
-        <tr>
-            <td>@patient.FName</td>
-            <td>@patient.Address</td>
-            <td>@patient.Phone</td>
-            <td><a href="~/Home/FillVisit/@patient.Id">Fill</a></td>
-        </tr>
+    <tr>
+        <td>@patient.FName</td>
+        <td>@patient.Address</td>
+        <td>@patient.Phone</td>
+        <td><a href="~/Home/FillVisit/@patient.Id">Fill</a> | </td>
+        <td><a href="~/Home/DeletePatient/@patient.Id">Delete</a> | </td>
+        <td><a href="~/Home/UpdatePatient/@patient.Id">Update</a> | </td>
+    </tr>
     }
 
     <tr>
